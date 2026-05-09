@@ -6,7 +6,8 @@
         "multiplayer": "*",
         "arcade-story": "github:microsoft/arcade-storytelling#v1.0.3",
         "storyboard": "*",
-        "arcade-screen-transitions": "github:riknoll/arcade-screen-transitions#v0.1.0"
+        "arcade-screen-transitions": "github:riknoll/arcade-screen-transitions#v0.1.0",
+        "corgio": "*"
     },
     "files": [
         "main.blocks",
