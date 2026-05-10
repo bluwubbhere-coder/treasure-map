@@ -1,7 +1,6 @@
 namespace SpriteKind {
     export const Text = SpriteKind.create()
     export const yapper = SpriteKind.create()
-    export const helper = SpriteKind.create()
 }
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
@@ -287,125 +286,7 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     false
     )
 })
-controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
-    animation.runImageAnimation(
-    Mira,
-    [img`
-        . . . . . . . . . . . . . . 
-        . f f f . f f f f f . . . . 
-        f f f f f c c c c f f . . . 
-        f f f f b c c c c c c f . . 
-        f f f c 3 c c c c c c f . . 
-        . f 3 3 c c c c c c c c f . 
-        . f f f c c c c c 4 c c f . 
-        . f f f f c c c 4 4 c f f . 
-        . f f 4 4 f b f 4 4 f f f . 
-        . f f 4 d 4 1 f d d c f . . 
-        . . f f f 4 d d d d f . . . 
-        . . 4 d d e 4 4 4 e f . . . 
-        . . e d d e 3 3 3 3 f . . . 
-        . . f e e f 6 6 6 6 f f . . 
-        . . f f f f f f f f f f . . 
-        . . . f f . . . f f f . . . 
-        `,img`
-        . . . . . . . . . . . . . . 
-        . f f f . f f f f f . . . . 
-        f f f f f c c c c f f . . . 
-        f f f f b c c c c c c f . . 
-        f f f c 3 c c c c c c f . . 
-        . f 3 3 c c c c c c c c f . 
-        . f f f c c c c c 4 c c f . 
-        . f f f f c c c 4 4 c f f . 
-        . f f 4 4 f b f 4 4 f f f . 
-        . . f 4 d 4 1 f d d f f . . 
-        . . f f f e e d d d f . . . 
-        . . . f 4 d d e 4 e f . . . 
-        . . . f e d d e 3 3 f . . . 
-        . . f f f e e f 6 6 f f . . 
-        . . f f f f f f f f f f . . 
-        . . . f f . . . f f f . . . 
-        `,img`
-        . f f f . f f f f f . . . . 
-        f f f f f c c c c f f . . . 
-        f f f f b c c c c c c f . . 
-        f f f c 3 c c c c c c f . . 
-        . f 3 3 c c c c c c c c f . 
-        . f f f c c c c c 4 c c f . 
-        . f f f f c c c 4 4 e f f . 
-        . f f 4 4 f b f 4 4 e f f . 
-        . . f 4 d 4 1 f d d f f . . 
-        . . f f f 4 d d d d f . . . 
-        . . . f e e 4 4 4 e f . . . 
-        . . . 4 d d e 3 3 3 f . . . 
-        . . . e d d e 3 3 3 f . . . 
-        . . . f e e f 6 6 6 f . . . 
-        . . . . f f f f f f . . . . 
-        . . . . . f f f . . . . . . 
-        `],
-    500,
-    false
-    )
-})
-controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
-    animation.runImageAnimation(
-    Mira,
-    [img`
-        . f f f . f f f f . f f f . 
-        f f f f f c c c c f f f f f 
-        f f f f b c c c c b f f f f 
-        f f f c 3 c c c c 3 c f f f 
-        . f 3 3 c c c c c c 3 3 f . 
-        . f c c c c 4 4 c c c c f . 
-        . f f c c 4 4 4 4 c c f f . 
-        . f f f b f 4 4 f b f f f . 
-        . f f 4 1 f d d f 1 4 f f . 
-        . . f f d d d d d d f f . . 
-        . . e f e 4 4 4 4 e f e . . 
-        . e 4 f b 3 3 3 3 b f 4 e . 
-        . 4 d f 3 3 3 3 3 3 c d 4 . 
-        . 4 4 f 6 6 6 6 6 6 f 4 4 . 
-        . . . . f f f f f f . . . . 
-        . . . . f f . . f f . . . . 
-        `,img`
-        . . . . . . . . . . . . . . 
-        . f f f . f f f f . f f f . 
-        f f f f f c c c c f f f f f 
-        f f f f b c c c c b f f f f 
-        f f f c 3 c c c c 3 c f f f 
-        . f 3 3 c c c c c c 3 3 f . 
-        . f c c c c 4 4 c c c c f . 
-        . f f c c 4 4 4 4 c c f f . 
-        . f f f b f 4 4 f b f f f . 
-        . f f 4 1 f d d f 1 4 f f . 
-        . . f f d d d d d 4 e f e . 
-        . f e f f b b b e d d 4 e . 
-        . e 4 f b 3 3 3 e d d e . . 
-        . . . f 6 6 6 6 f e e . . . 
-        . . . f f f f f f f . . . . 
-        . . . f f f . . . . . . . . 
-        `,img`
-        . . . . . . . . . . . . . . 
-        . f f f . f f f f . f f f . 
-        f f f f f c c c c f f f f f 
-        f f f f b c c c c b f f f f 
-        f f f c 3 c c c c 3 c f f f 
-        . f 3 3 c c c c c c 3 3 f . 
-        . f c c c c 4 4 c c c c f . 
-        . f f c c 4 4 4 4 c c f f . 
-        . f f f b f 4 4 f b f f f . 
-        . f f 4 1 f d d f 1 4 f f . 
-        . e f e 4 d d d d d f f . . 
-        . e 4 d d e b b b f f e f . 
-        . . e d d e 3 3 b e f 4 e . 
-        . . . e e f 6 6 6 6 f . . . 
-        . . . . f f f f f f f . . . 
-        . . . . . . . . f f f . . . 
-        `],
-    500,
-    false
-    )
-})
-function transition1 () {
+function obstacle1 () {
     scene.setBackgroundImage(img`
         ................................................................................................................................................................
         ................................................................................................................................................................
@@ -529,7 +410,7 @@ function transition1 () {
         ................................................................................................................................................................
         `)
     game.showLongText("Your journey now begins.....", DialogLayout.Top)
-    tiles.setCurrentTilemap(tilemap`level1`)
+    tiles.setCurrentTilemap(tilemap`level`)
     Mira = sprites.create(img`
         . f f f . f f f f . f f f . 
         f f f f f c c c c f f f f f 
@@ -549,27 +430,126 @@ function transition1 () {
         . . . . f f . . f f . . . . 
         `, SpriteKind.Player)
     tiles.placeOnTile(Mira, tiles.getTileLocation(0, 0))
-    mySprite4 = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . b b b b b b b b b b b b b b . 
-        . b b c 6 6 6 6 6 6 6 6 c b b . 
-        . b c 6 6 6 6 6 6 6 6 6 6 c b . 
-        . b 6 6 6 6 6 6 6 6 6 6 6 6 b . 
-        . b 6 6 6 6 6 6 6 6 6 6 6 6 b . 
-        . b 6 6 6 6 6 6 6 6 6 6 6 6 b . 
-        . b 6 6 6 6 6 6 6 6 6 6 6 6 b . 
-        . b 6 6 6 6 6 6 6 6 6 6 6 6 b . 
-        . b 9 6 6 6 6 6 6 6 6 6 6 9 b . 
-        . b 9 6 6 6 6 6 6 6 6 6 6 9 b . 
-        . b 6 9 6 6 6 6 6 6 6 6 9 6 b . 
-        . b c 6 9 9 9 9 9 9 9 9 6 c b . 
-        . b b c c c c c c c c c c b b . 
-        . b b b b b b b b b b b b b b . 
-        . . . . . . . . . . . . . . . . 
-        `, SpriteKind.helper)
-    tiles.placeOnTile(mySprite4, tiles.getTileLocation(6, 5))
     controller.moveSprite(Mira, 50, 50)
 }
+controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+    animation.runImageAnimation(
+    Mira,
+    [img`
+        . . . . . . . . . . . . . . 
+        . f f f . f f f f f . . . . 
+        f f f f f c c c c f f . . . 
+        f f f f b c c c c c c f . . 
+        f f f c 3 c c c c c c f . . 
+        . f 3 3 c c c c c c c c f . 
+        . f f f c c c c c 4 c c f . 
+        . f f f f c c c 4 4 c f f . 
+        . f f 4 4 f b f 4 4 f f f . 
+        . f f 4 d 4 1 f d d c f . . 
+        . . f f f 4 d d d d f . . . 
+        . . 4 d d e 4 4 4 e f . . . 
+        . . e d d e 3 3 3 3 f . . . 
+        . . f e e f 6 6 6 6 f f . . 
+        . . f f f f f f f f f f . . 
+        . . . f f . . . f f f . . . 
+        `,img`
+        . . . . . . . . . . . . . . 
+        . f f f . f f f f f . . . . 
+        f f f f f c c c c f f . . . 
+        f f f f b c c c c c c f . . 
+        f f f c 3 c c c c c c f . . 
+        . f 3 3 c c c c c c c c f . 
+        . f f f c c c c c 4 c c f . 
+        . f f f f c c c 4 4 c f f . 
+        . f f 4 4 f b f 4 4 f f f . 
+        . . f 4 d 4 1 f d d f f . . 
+        . . f f f e e d d d f . . . 
+        . . . f 4 d d e 4 e f . . . 
+        . . . f e d d e 3 3 f . . . 
+        . . f f f e e f 6 6 f f . . 
+        . . f f f f f f f f f f . . 
+        . . . f f . . . f f f . . . 
+        `,img`
+        . f f f . f f f f f . . . . 
+        f f f f f c c c c f f . . . 
+        f f f f b c c c c c c f . . 
+        f f f c 3 c c c c c c f . . 
+        . f 3 3 c c c c c c c c f . 
+        . f f f c c c c c 4 c c f . 
+        . f f f f c c c 4 4 e f f . 
+        . f f 4 4 f b f 4 4 e f f . 
+        . . f 4 d 4 1 f d d f f . . 
+        . . f f f 4 d d d d f . . . 
+        . . . f e e 4 4 4 e f . . . 
+        . . . 4 d d e 3 3 3 f . . . 
+        . . . e d d e 3 3 3 f . . . 
+        . . . f e e f 6 6 6 f . . . 
+        . . . . f f f f f f . . . . 
+        . . . . . f f f . . . . . . 
+        `],
+    500,
+    false
+    )
+})
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    animation.runImageAnimation(
+    Mira,
+    [img`
+        . f f f . f f f f . f f f . 
+        f f f f f c c c c f f f f f 
+        f f f f b c c c c b f f f f 
+        f f f c 3 c c c c 3 c f f f 
+        . f 3 3 c c c c c c 3 3 f . 
+        . f c c c c 4 4 c c c c f . 
+        . f f c c 4 4 4 4 c c f f . 
+        . f f f b f 4 4 f b f f f . 
+        . f f 4 1 f d d f 1 4 f f . 
+        . . f f d d d d d d f f . . 
+        . . e f e 4 4 4 4 e f e . . 
+        . e 4 f b 3 3 3 3 b f 4 e . 
+        . 4 d f 3 3 3 3 3 3 c d 4 . 
+        . 4 4 f 6 6 6 6 6 6 f 4 4 . 
+        . . . . f f f f f f . . . . 
+        . . . . f f . . f f . . . . 
+        `,img`
+        . . . . . . . . . . . . . . 
+        . f f f . f f f f . f f f . 
+        f f f f f c c c c f f f f f 
+        f f f f b c c c c b f f f f 
+        f f f c 3 c c c c 3 c f f f 
+        . f 3 3 c c c c c c 3 3 f . 
+        . f c c c c 4 4 c c c c f . 
+        . f f c c 4 4 4 4 c c f f . 
+        . f f f b f 4 4 f b f f f . 
+        . f f 4 1 f d d f 1 4 f f . 
+        . . f f d d d d d 4 e f e . 
+        . f e f f b b b e d d 4 e . 
+        . e 4 f b 3 3 3 e d d e . . 
+        . . . f 6 6 6 6 f e e . . . 
+        . . . f f f f f f f . . . . 
+        . . . f f f . . . . . . . . 
+        `,img`
+        . . . . . . . . . . . . . . 
+        . f f f . f f f f . f f f . 
+        f f f f f c c c c f f f f f 
+        f f f f b c c c c b f f f f 
+        f f f c 3 c c c c 3 c f f f 
+        . f 3 3 c c c c c c 3 3 f . 
+        . f c c c c 4 4 c c c c f . 
+        . f f c c 4 4 4 4 c c f f . 
+        . f f f b f 4 4 f b f f f . 
+        . f f 4 1 f d d f 1 4 f f . 
+        . e f e 4 d d d d d f f . . 
+        . e 4 d d e b b b f f e f . 
+        . . e d d e 3 3 b e f 4 e . 
+        . . . e e f 6 6 6 6 f . . . 
+        . . . . f f f f f f f . . . 
+        . . . . . . . . f f f . . . 
+        `],
+    500,
+    false
+    )
+})
 function cutscene1 () {
     scene.setBackgroundImage(img`
         ................................................................................................................................................................
@@ -892,12 +872,11 @@ function cutscene1 () {
         pause(1500)
         story.spriteSayText(Mira, "What just happened?", 14, 1, story.TextSpeed.Normal)
         pause(500)
-        transition1()
+        obstacle1()
     })
 }
 let mySprite3: Sprite = null
 let mySprite2: Sprite = null
-let mySprite4: Sprite = null
 let mySprite: Sprite = null
 let Mira: Sprite = null
-transition1()
+obstacle1()
